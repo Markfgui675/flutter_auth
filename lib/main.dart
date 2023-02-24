@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_auth/pages/login_page.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main(){
+void main() async {
+
+  WidgetsFlutterBinding.ensureInitialized();
+
   runApp(const MyApp());
 }
 
